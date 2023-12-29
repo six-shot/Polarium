@@ -45,9 +45,9 @@ export default function Footer() {
                     {item.title}
                   </h4>
                   <ul className="mt-4">
-                    {item.links.map((item) => {
+                    {item.links.map((item,index) => {
                       return (
-                        <li className="silka text-[14px] mb-3 w-[180px] leading-[22px]">
+                        <li className="silka text-[14px] mb-3 w-[180px] leading-[22px]" key={index}>
                           {item.name}
                         </li>
                       );
