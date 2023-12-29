@@ -9,7 +9,7 @@ function Focus() {
       <h2 className="silka font-bold text-[38px] px-8 py-7">In Focus</h2>
       <div className="flex xl:flex-row flex-col gap-7">
         <div className="flex flex-col items-center">
-          <Image src={focus1} className="rounded-[8px]" />
+          <Image src={focus1} className="rounded-[8px]" alt="focus1"/>
           <h4 className="silka font-bold text-[22px] text-center my-7">
             Pola commits to set science-based emission reduction target
           </h4>
@@ -22,7 +22,7 @@ function Focus() {
           </button>
         </div>
         <div className="flex flex-col items-center ">
-          <Image src={focus2} className="rounded-[8px] " />
+          <Image src={focus2} className="rounded-[8px] " alt="focus2" />
           <h4 className="silka font-bold text-[22px] text-center my-7">
             Pola commits to set science-based emission reduction target
           </h4>
@@ -35,7 +35,7 @@ function Focus() {
           </button>
         </div>
         <div className="flex flex-col items-center">
-          <Image src={focus3} className="rounded-[8px]" />
+          <Image src={focus3} className="rounded-[8px]" alt="focus3"/>
           <h4 className="silka font-bold text-[22px] text-center my-7">
             Pola commits to set science-based emission reduction target
           </h4>

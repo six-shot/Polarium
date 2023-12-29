@@ -28,6 +28,7 @@ function Numbers() {
           <Image
             className=""
             src={pol1}
+            alt="pol1"
           />
         </div>
     </div>

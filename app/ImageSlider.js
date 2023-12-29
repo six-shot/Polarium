@@ -34,7 +34,7 @@ function ImageSlider() {
     <div className="w-full ">
       {/* <button className='btns' onClick={handlePrevious}>P</button> */}
       <div className="w-full h-[418px] relative">
-        <Image src={wordData.value} className="w-full h-full object-cover" />
+        <Image src={wordData.value} className="w-full h-full object-cover" alt="slide" />
         <div className="absolute inset-0 bg-black opacity-[35%]  transition-opacity duration-300 rounded-[8px]"></div>
       </div>
 
@@ -51,6 +51,7 @@ function ImageSlider() {
                   : "opacity-75 hover:opacity-100  "
               }
               src={data.value}
+              alt="slide"
               onMouseEnter={() => handleHover(i)}
               
              

@@ -39,8 +39,8 @@ export default function Footer() {
 
           <div className="col-span-4">
             <div className="w-full flex flex-row gap-2 flex-wrap md:mt-0 mt-10">
-              {footerLinks.map((item) => (
-                <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
+              {footerLinks.map((item,index) => (
+                <div className="flex flex-col ss:my-0 my-4 min-w-[150px]" key={index}>
                   <h4 className="silka font-semibold text-[16px] leading-[27px] mb-3 ">
                     {item.title}
                   </h4>

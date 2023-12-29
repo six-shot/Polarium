@@ -26,19 +26,19 @@ function Offerings() {
         </div>
         <div className="flex flex-1 flex-col gap-2 xl:pl-48">
           <div className="border-[1px] border-[#cccccc] hover:bg-[#E6E6E6] w-full h-[80px] flex items-center rounded-[16px] px-14   gap-3">
-            <Image src={reserve} />
+            <Image src={reserve}  alt="reserve"/>
             <h5 className="silka font-semibold">Secure reserve power</h5>
           </div>
           <div className="border-[1px] border-[#cccccc] w-full hover:bg-[#E6E6E6] h-[80px] flex items-center rounded-[16px] px-14 gap-3">
-          <Image src={cost} />
+          <Image src={cost} alt="const"/>
             <h5 className="silka font-semibold">Secure reserve power</h5>
           </div>
           <div className="border-[1px] border-[#cccccc] w-full hover:bg-[#E6E6E6] h-[80px] flex items-center rounded-[16px] px-14 gap-3">
-          <Image src={revenue} />
+          <Image src={revenue} alt="revenue"/>
             <h5 className="silka font-semibold">Secure reserve power</h5>
           </div>
           <div className="border-[1px] border-[#cccccc] w-full hover:bg-[#E6E6E6] h-[80px] flex items-center rounded-[16px] px-14 gap-3">
-          <Image src={energy} />
+          <Image src={energy} alt="energy"/>
             <h5 className="silka font-semibold">Secure reserve power</h5>
           </div>
         </div>

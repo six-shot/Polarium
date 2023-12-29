@@ -25,6 +25,7 @@ function WhatWeDo() {
           <Image
             className="rounded-3xl w-full h-full sm:object-none object-cover"
             src={pol}
+            alt="pol"
           />
         </div>
       </div>
