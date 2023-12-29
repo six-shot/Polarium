@@ -8,8 +8,8 @@ export default function Footer() {
   return (
     <div>
       <div className="bg-[#f5f5f5] ">
-        <div className="max-w-[1440px] py-20 mx-auto grid grid-cols-7">
-          <div className="col-span-3 pr-32 ">
+        <div className="max-w-[1440px] px-4 2xl:px-0 py-20 mx-auto grid grid-cols-1 sm:grid-cols-7">
+          <div className="col-span-3 sm:pr-32 sm:order-first order-last">
             <Image className="w-[100px] mb-10" src={about} alt="about" />
             <div className="flex justify-between  items-center">
               <Image className="w-[55%]" src={FT} alt="about" />
@@ -38,16 +38,16 @@ export default function Footer() {
           </div>
 
           <div className="col-span-4">
-            <div className="w-full flex flex-row gap-2 flex-wrap md:mt-0 mt-10">
+            <div className="w-full flex sm:flex-row flex-col gap-2 sm:flex-wrap md:mt-0 mt-10">
               {footerLinks.map((item,index) => (
                 <div className="flex flex-col ss:my-0 my-4 min-w-[150px]" key={index}>
-                  <h4 className="silka font-semibold text-[16px] leading-[27px] mb-3 ">
+                  <h4 className="silka font-semibold text-[16px] leading-[27px] mb-3  sm:border-0 border-b-[1px] py-4 border-black">
                     {item.title}
                   </h4>
                   <ul className="mt-4">
                     {item.links.map((item,index) => {
                       return (
-                        <li className="silka text-[14px] mb-3 w-[180px] leading-[22px]" key={index}>
+                        <li className="silka text-[14px] mb-3 sm:w-[180px] leading-[22px]" key={index}>
                           {item.name}
                         </li>
                       );
