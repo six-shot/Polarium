@@ -12,50 +12,38 @@ function ImageSlider() {
     { id: 3, value: one },
   ];
   const [wordData, setWordData] = useState(imgs[0]);
-  //   const [val, setVal] = useState(0);
+
   const handleHover = (index) => {
     const wordSlider = imgs[index];
     setWordData(wordSlider);
   };
 
-  //   const handleNext = ()=>{
-  //     let index = val < imgs.length -1 ? val +1 : val;
-  //     setVal(index)
-  //     const wordSlider=imgs[index];
-  //     setWordData(wordSlider)
-  //   }
-  //   const handlePrevious = ()=>{
-  //     let index = val <= imgs.length -1 && val > 0? val - 1 : val;
-  //     setVal(index)
-  //     const wordSlider=imgs[index];
-  //     setWordData(wordSlider)
-  //   }
   return (
-    <div className="w-full ">
-      {/* <button className='btns' onClick={handlePrevious}>P</button> */}
+    <div className="w-full">
       <div className="w-full h-[418px] relative">
-        <Image src={wordData.value} className="w-full h-full object-cover" alt="slide" />
-        <div className="absolute inset-0 bg-black opacity-[35%]  transition-opacity duration-300 rounded-[8px]"></div>
+        <div className="absolute inset-0 bg-black opacity-[35%] transition-opacity duration-300 rounded-[8px]"></div>
+        <Image
+          src={wordData.value}
+          className="w-full h-full object-cover"
+          alt="slide"
+        />
       </div>
 
-      {/* <button className='btns' onClick={handleNext}>N</button> */}
       <div className="flex justify-between xl:flex-row flex-col">
         {imgs.map((data, i) => (
           <div className="xl:w-[200px] w-full h-[100px] relative mt-5" key={i}>
-            <div className="absolute h-full  inset-0 bg-black opacity-[35%]  transition-opacity duration-300 rounded-[8px]"></div>
-
-            <Image
+           
+            <div
               className={
                 wordData.id === i
-                  ? "cursor-pointer w-[200px] h-[100px]"
-                  : "opacity-75 hover:opacity-100  "
+                  ? "cursor-pointer w-full h-full object-cover opacity-100"
+                  : "w-full h-full object-cover opacity-75 hover:opacity-100"
               }
-              src={data.value}
-              alt="slide"
               onMouseEnter={() => handleHover(i)}
-              
-             
-            />
+              style={{ transition: "opacity 300ms ease-in-out" }}
+            >
+              <Image src={data.value} alt="slide" />
+            </div>
           </div>
         ))}
       </div>
