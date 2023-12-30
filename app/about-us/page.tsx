@@ -2,6 +2,7 @@ import React from 'react'
 import bgg from "../../public/about.jpeg"
 import WeAre from "../components/WeAre"
 import WorkingAs from "../components/WorkingAs"
+import Example  from "../components/HorizontalScroll"
 export default function page() {
   return (
     <div>
@@ -38,6 +39,7 @@ export default function page() {
       <div className='mt-32'>
       <WeAre />
       <WorkingAs/>
+      <Example/>
       </div>
     </div>
   );
