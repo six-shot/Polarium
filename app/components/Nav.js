@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { IconContext } from "react-icons/lib";
 import { TbMenu } from "react-icons/tb";
 import NavLinks from "./NavLinks";
+import Link from "next/link";
 
 function Nav() {
   const [toggle, setToggle] = useState(true);
@@ -22,7 +23,7 @@ function Nav() {
                 toggle ? "flex w-full justify-between items-center" : "hidden"
               }   bottom`}
             >
-              <div className="silka uppercase">Logo</div>
+              <div className="silka uppercase font-bold"><Link href="/">POLARIUM</Link></div>
               <nav>
                 <ul className="sm:flex items-center hidden text-xs text-[#2F2F2F] silka gap-12  font-semibold">
                   <li>About</li>

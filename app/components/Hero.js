@@ -19,7 +19,7 @@ function Hero() {
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
         </div>
         <div className="">
-          <Nav />
+          
         </div>
         <div className="  flex w-full h-full justify-center flex-col items-center ">
           <h1 className="silka font-bold xl:text-[56px] text-[40px] text-center leading-[46px] z-50">
