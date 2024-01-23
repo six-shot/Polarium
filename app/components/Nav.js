@@ -23,7 +23,7 @@ function Nav() {
                 toggle ? "flex w-full justify-between items-center" : "hidden"
               }   bottom`}
             >
-              <div className="silka uppercase font-bold"><Link href="/">POLARIUM</Link></div>
+              <div className="silka uppercase font-bold"><Link href="/">P.M</Link></div>
               <nav>
                 <ul className="sm:flex items-center hidden text-xs text-[#2F2F2F] silka gap-8  font-semibold">
                   <li>About</li>
