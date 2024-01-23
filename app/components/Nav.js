@@ -25,7 +25,7 @@ function Nav() {
             >
               <div className="silka uppercase font-bold"><Link href="/">POLARIUM</Link></div>
               <nav>
-                <ul className="sm:flex items-center hidden text-xs text-[#2F2F2F] silka gap-12  font-semibold">
+                <ul className="sm:flex items-center hidden text-xs text-[#2F2F2F] silka gap-8  font-semibold">
                   <li>About</li>
                   <li>why polarium</li>
                   <li>Customer Segment</li>
